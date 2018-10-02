@@ -1,16 +1,18 @@
 
+// Register the service worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+
 // Unhide contact form on page load
 const contactForm = document.querySelector('#overlay')
 $(document).ready(function () {
     contactForm.style.visibility = "visible";
 })
 
-
-
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
-
 class TextScramble {
     constructor(el) {
         this.el = el
@@ -65,47 +67,48 @@ class TextScramble {
     }
 }
 
-// ——————————————————————————————————————————————————
-// Example
-// ——————————————————————————————————————————————————
+// Start "hackerizing" the text
+startTextDecode()
 
-const phrases = [
-    'Twitch streamer',
-    'Social influencer',
-    'TSM member',
-    'McCree God',
-    'Twitch streamer'
-]
+function startTextDecode() {
+    const phrases = [
+        'Twitch streamer',
+        'Social influencer',
+        'TSM member',
+        'McCree God',
+        'Twitch streamer'
+    ]
 
-const phraseLogo = [
-    '',
-    'AIMBOT CALVIN',
-]
+    const phraseLogo = [
+        '',
+        'AIMBOT CALVIN',
+    ]
 
-const el = document.querySelector('.text')
-const el2 = document.querySelector('.custom-heading')
-const fx = new TextScramble(el)
-const fx2 = new TextScramble(el2)
+    const el = document.querySelector('.text')
+    const el2 = document.querySelector('.custom-heading')
+    const fx = new TextScramble(el)
+    const fx2 = new TextScramble(el2)
 
-let counter = 0
-const next = () => {
-    fx.setText(phrases[counter]).then(() => {
-        if (counter < phrases.length - 1) {
-            setTimeout(next, 2500)
-            counter = (counter + 1) % phrases.length
-        }
-    })
+    let counter = 0
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+            if (counter < phrases.length - 1) {
+                setTimeout(next, 2500)
+                counter = (counter + 1) % phrases.length
+            }
+        })
+    }
+
+    let counter2 = 0
+    const next2 = () => {
+        fx2.setText(phraseLogo[counter2]).then(() => {
+            if (counter2 < phraseLogo.length - 1) {
+                setTimeout(next2, 500)
+                counter2 = (counter2 + 1) % phraseLogo.length
+            }
+        })
+    }
+
+    next()
+    next2()
 }
-
-let counter2 = 0
-const next2 = () => {
-    fx2.setText(phraseLogo[counter2]).then(() => {
-        if (counter2 < phraseLogo.length - 1) {
-            setTimeout(next2, 500)
-            counter2 = (counter2 + 1) % phraseLogo.length
-        }
-    })
-}
-
-next()
-next2()

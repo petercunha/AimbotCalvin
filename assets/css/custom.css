@@ -1,17 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
 html,
 body {
+  font-display: auto;
   font-family: 'Roboto Mono', monospace;
-  /* background: #212121;
-  height: 100%; */
 }
-/* .container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-} */
 .custom-heading {
     font-family: 'Roboto Mono', monospace !important;
     margin-bottom: 0.3em !important;
