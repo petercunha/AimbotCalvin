@@ -1,3 +1,12 @@
+
+// Unhide contact form on page load
+const contactForm = document.querySelector('#overlay')
+$(document).ready(function () {
+    contactForm.style.visibility = "visible";
+})
+
+
+
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
