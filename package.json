@@ -9,6 +9,7 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
     "gulp-babel-minify": "^0.5.0",
     "gulp-clean-css": "^3.10.0",

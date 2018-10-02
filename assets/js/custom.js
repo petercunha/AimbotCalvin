@@ -101,7 +101,7 @@ let counter2 = 0
 const next2 = () => {
     fx2.setText(phraseLogo[counter2]).then(() => {
         if (counter2 < phraseLogo.length - 1) {
-            setTimeout(next2, 200)
+            setTimeout(next2, 500)
             counter2 = (counter2 + 1) % phraseLogo.length
         }
     })

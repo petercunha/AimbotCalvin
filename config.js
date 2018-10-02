@@ -133,7 +133,7 @@ var option_hero_gravity_effect = "on";
 // "glitch" = GLITCH BACKGROUND
 // "custom" = CUSTOM BACKGROUND
 
-var option_hero_background_mode = "youtube";
+var option_hero_background_mode = "image";
 
 
 
@@ -143,7 +143,7 @@ var option_hero_background_mode = "youtube";
 
 
 // IMAGE PATH / URL
-var option_hero_background_image_path = [{ src: 'assets/images/5.jpg' }];
+var option_hero_background_image_path = [{ src: 'assets/images/bg.jpg' }];
 
 
 
@@ -210,7 +210,7 @@ var option_hero_background_slider_transitionDuration = 800;
 
 
 // IMAGES PATH / URL
-var option_hero_background_kenburns_path = [{ src: "assets/images/1.jpg" }, { src: "assets/images/2.jpg" }, { src: "assets/images/3.jpg" }];
+var option_hero_background_kenburns_path = [{ src: "http://getwallpapers.com/wallpaper/full/a/7/1/1117794-mccree-wallpapers-1958x1324-hd-for-mobile.jpg" }, { src: "http://getwallpapers.com/wallpaper/full/a/7/1/1117794-mccree-wallpapers-1958x1324-hd-for-mobile.jpg" }];
 
 
 
