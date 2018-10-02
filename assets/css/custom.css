@@ -8,10 +8,12 @@ body {
     margin-bottom: 0.3em !important;
 }
 .text {
+  font-family: 'Roboto Mono', monospace !important;
   font-weight: 100;
   font-size: 28px;
   color: #fafafa;
 }
 .dud {
+  font-family: 'Roboto Mono', monospace !important;
   color: #757575 !important;
 }
