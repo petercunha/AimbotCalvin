@@ -303,7 +303,7 @@ var option_hero_background_youtube_loop = "on";
 // "on" = SHOW VIDEO CONTROLS
 // "off" = HIDE VIDEO CONTROLS
 
-var option_hero_background_youtube_controls = "on";
+var option_hero_background_youtube_controls = "off";
 
 
 
