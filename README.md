@@ -1,5 +1,4 @@
-# Aimbot Calvin
-I recently built an official website for the Twitch streamer and Overwatch player known as Aimbot Calvin. This is the source code for the landing page.
+Source code for Aimbot Calvin's website
 
 ## Socials
 - Twitch: https://www.twitch.tv/aimbotcalvin
