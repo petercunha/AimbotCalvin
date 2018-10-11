@@ -1,6 +1,6 @@
-Source code for Aimbot Calvin's website
+Code for Aimbot Calvin's website. Hosted via [Netlify](https://www.netlify.com).
 
-## Socials
+**Socials**
 - Twitch: https://www.twitch.tv/aimbotcalvin
 - Twitter: https://twitter.com/aimbotcalvin
 - YouTube: https://www.youtube.com/channel/UCdugdXty7WGW1mES30GKgrQ
