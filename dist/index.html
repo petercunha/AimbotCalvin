@@ -82,17 +82,26 @@
                         <div class=container>
                             <h1>Contact</h1>
                             <p>Want to say hello? Business inquiries? Drop us an email and we will get back to you as
-                                soon as we can.<form action="" id=contact-form method="">
-                                    <div class=control-group><label class=nameLabel>Name</label> <input class=form-control
-                                            id=contact-form-name name=name></div>
-                                    <div class=control-group><label class=emailLabel>Email</label> <input class=form-control
-                                            id=contact-form-email name=email></div>
-                                    <div class="control-group fhp-input"><label class=phoneLabel>Phone</label> <input
-                                            class=form-control id=contact-form-phone name=phone type=phone></div>
-                                    <div class=control-group><label class=messageLabel>Message</label> <textarea class=form-control
-                                            id=contact-form-message name=message></textarea></div>
-                                    <div class=control-group><button class=form-control type=submit><i class="ti-arrow-right first"></i>
-                                            <i class="ti-arrow-right second"></i></button></div>
+                                soon as we can.
+                                <form id="contact-form" action="https://formspree.io/petercunha8@gmail.com" method="POST">
+                                    <div class="control-group">
+                                        <label class="nameLabel">Name</label>
+                                        <input id="contact-form-name" type="text" name="Name" class="form-control">
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="emailLabel">Email</label>
+                                        <input id="contact-form-email" type="text" name="Email" class="form-control">
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="messageLabel">Message</label>
+                                        <textarea id="contact-form-message" name="Message" class="form-control"></textarea>
+                                    </div>
+                                    <div class="control-group">
+                                        <button type="submit" class="form-control">
+                                            <i class="ti-arrow-right first"></i>
+                                            <i class="ti-arrow-right second"></i>
+                                        </button>
+                                    </div>
                                 </form>
                         </div>
                     </div>

@@ -410,60 +410,60 @@ $(document).ready(function () {
 	/**	4. AJAX - CONTACT
 	 *****************************************************/
 
-	$("#contact-form").submit(function (e) {
+	// $("#contact-form").submit(function (e) {
 
-		e.preventDefault();
-		var postdata = $(this).serialize();
+	// 	e.preventDefault();
+	// 	var postdata = $(this).serialize();
 
-		$.ajax({
+	// 	$.ajax({
 
-			type: "POST",
-			url: "assets/php/contact.php",
-			data: postdata,
-			dataType: "json",
-			success: function (json) {
+	// 		type: "POST",
+	// 		url: "assets/php/contact.php",
+	// 		data: postdata,
+	// 		dataType: "json",
+	// 		success: function (json) {
 
-				$("#contact-form.error input, #contact-form.error textarea").removeClass("active");
+	// 			$("#contact-form.error input, #contact-form.error textarea").removeClass("active");
 
-				setTimeout(function () {
+	// 			setTimeout(function () {
 
-					if (json.nameMessage !== "") {
+	// 				if (json.nameMessage !== "") {
 
-						$("#contact-form-name").addClass("active").attr("placeholder", json.nameMessage);
-						$("#contact-form").addClass("error");
+	// 					$("#contact-form-name").addClass("active").attr("placeholder", json.nameMessage);
+	// 					$("#contact-form").addClass("error");
 
-					}
+	// 				}
 
-					if (json.emailMessage !== "") {
+	// 				if (json.emailMessage !== "") {
 
-						$("#contact-form-email").addClass("active").val("").attr("placeholder", json.emailMessage);
-						$("#contact-form").addClass("error");
+	// 					$("#contact-form-email").addClass("active").val("").attr("placeholder", json.emailMessage);
+	// 					$("#contact-form").addClass("error");
 
-					}
+	// 				}
 
-					if (json.messageMessage !== "") {
+	// 				if (json.messageMessage !== "") {
 
-						$("#contact-form-message").addClass("active").attr("placeholder", json.messageMessage);
-						$("#contact-form").addClass("error");
+	// 					$("#contact-form-message").addClass("active").attr("placeholder", json.messageMessage);
+	// 					$("#contact-form").addClass("error");
 
-					}
+	// 				}
 
-				}, 50);
+	// 			}, 50);
 
-				if (json.nameMessage === "" && json.emailMessage === "" && json.messageMessage === "") {
+	// 			if (json.nameMessage === "" && json.emailMessage === "" && json.messageMessage === "") {
 
-					$('#contact-form').removeClass("error").addClass("success");
-					$('#contact-form textarea, #contact-form input').attr("placeholder", "");
-					$('#contact-form textarea').attr("placeholder", json.succesMessage);
-					$('#contact-form input, #contact-form button, #contact-form textarea').val('').prop('disabled', true);
+	// 				$('#contact-form').removeClass("error").addClass("success");
+	// 				$('#contact-form textarea, #contact-form input').attr("placeholder", "");
+	// 				$('#contact-form textarea').attr("placeholder", json.succesMessage);
+	// 				$('#contact-form input, #contact-form button, #contact-form textarea').val('').prop('disabled', true);
 
-				}
+	// 			}
 
-			}
+	// 		}
 
-		});
+	// 	});
 
-	});
+	// });
 
 
 
